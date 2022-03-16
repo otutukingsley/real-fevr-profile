@@ -4,6 +4,8 @@ import App from "./App"
 import { GlobalStyle } from "./styles/globalStyles"
 import { ThemeProvider } from "styled-components"
 import { theme } from "./styles/theme"
+import "./styles/fonts/fonts.css"
+import "./styles/reset.css"
 import reportWebVitals from "./reportWebVitals"
 
 ReactDOM.render(

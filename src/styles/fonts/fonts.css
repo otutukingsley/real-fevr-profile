@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Azo Sans";
+  src: url("./AzoSans-Regular.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Md";
+  src: url("./AzoSans-Medium.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Bold";
+  src: url("./AzoSans-Bold.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Black";
+  src: url("./AzoSans-Black.woff") format("woff");
+  font-style: normal;
+}
