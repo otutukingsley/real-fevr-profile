@@ -1,12 +1,149 @@
 import styled, { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-spacing: 0;
+}
+
+input,
+input:before,
+input:after {
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+
 #root {
   height: -webkit-fill-available;
 }
 
 html{
   scroll-behaviour: smooth;
+  height: 100%;
 }
 
 *{
@@ -18,6 +155,7 @@ html{
 
 body{
   font-family: Azo Md;
+  line-height: 1;
   overflow-x: hidden;
   scrollbar-gutter: stable;
   -webkit-font-smoothing: antialiased;
@@ -26,20 +164,12 @@ body{
   color: ${({ theme }) => theme.colors.white};
 }
 
-div{
-  margin:0;
-  padding:0;
-}
-
 a{
   text-decoration: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
 }
-ul,
-ol{
-  list-style:none;
+::selection {
+  background: rgba(48, 224, 111, 0.5);
+  color: #fff;
 }
 `
 export const Container = styled.div`
@@ -52,7 +182,7 @@ export const FlexRowContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: ${({ justify }) => (justify ? justify : "stretch")};
   grid-gap: ${({ gap }) => (gap ? gap : "")};
 `
 

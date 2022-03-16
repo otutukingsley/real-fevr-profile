@@ -19,7 +19,7 @@ export const ShowcaseMain = styled.div`
     height: 100%;
     background: linear-gradient(
       180deg,
-      ${({ theme }) => theme.colors.lighterGreen} 0%,
+      ${({ theme }) => theme.colors.DarkGreen} 0%,
       ${({ theme }) => theme.colors.lighterPurple} 13%,
       rgba(0, 0, 0, 0) 100%
     );

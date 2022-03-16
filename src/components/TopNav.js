@@ -26,7 +26,7 @@ const TopNav = () => {
   return (
     <TopNavigation>
       <Container>
-        <FlexRowContainer>
+        <FlexRowContainer justify="space-between">
           <TopNavBrand
             href="https://www.realfevr.com/buy-fevr"
             rel="noreferrer"
@@ -73,8 +73,10 @@ const TopNav = () => {
                   </TopNavSocialsItemLink>
                 </TopNavSocialsItem>
               </TopNavSocials>
-              <OrdinaryLink href="#!">STAKING</OrdinaryLink>
-              <OrdinaryLink href="#!">
+              <OrdinaryLink href="#!" bold>
+                STAKING
+              </OrdinaryLink>
+              <OrdinaryLink href="#!" bold>
                 NFT P2E GAME <span className="soon">(SOON)</span>
               </OrdinaryLink>
               <Button name="Play Fantasy" green={false} img={Soccer} />

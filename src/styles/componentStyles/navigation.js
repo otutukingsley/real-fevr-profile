@@ -13,11 +13,37 @@ export const TopNavigation = styled.nav`
   z-index: 1000;
 `
 
+export const MainNavigation = styled(TopNavigation)`
+  background: transparent;
+  border: unset;
+  padding: 0rem 1.5rem;
+`
+
 export const BrandContainer = styled.div`
   width: 1.875rem;
   height: 1.875rem;
   display: block;
   transition: ${({ theme }) => theme.transitions.all};
+`
+
+export const NavLogoContainer = styled.div`
+  width: auto;
+  max-width: 18vw;
+  min-width: 12.5rem;
+  height: 3.5rem;
+  display: block;
+`
+
+export const Beta = styled.div`
+  padding: 0.3rem 0.4rem 0.1rem 0.4rem;
+  display: block;
+  font-size: 0.875rem;
+  width: auto;
+  text-transform: uppercase;
+  background: linear-gradient(119.91deg, #e76af7 -18.1%, #a034ae 82.06%);
+  box-shadow: 0px 10px 20px rgba(29, 53, 117, 0.3);
+  text-align: center;
+  font-family: Azo Black;
 `
 
 export const Pg = styled.p`
@@ -38,6 +64,11 @@ export const TopNavBrand = styled(CustomLink)`
     transition: ${({ theme }) => theme.transitions.all};
     color: ${({ theme }) => theme.colors.purple};
   }
+`
+
+export const NavBrand = styled(CustomLink)`
+  color: ${({ theme }) => theme.colors.white};
+  display: block;
 `
 
 export const BrandImg = styled.img`
@@ -74,9 +105,9 @@ export const TopNavSocialsItemLink = styled(CustomLink)`
   }
 `
 export const OrdinaryLink = styled(CustomLink)`
-  font-weight: bold;
+  font-weight: ${({ bold }) => (bold ? "bold" : "normal")};
   color: ${({ theme }) => theme.colors.white};
-
+  text-transform: uppercase;
   .soon {
     font-weight: 300;
     font-family: Azo Sans;
