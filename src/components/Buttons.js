@@ -2,9 +2,9 @@ import React from "react"
 import { CustomBtn } from "../styles/componentStyles/button"
 import { FlexRowContainer } from "../styles/globalStyles"
 
-export const Button = ({ name, img, color, background }) => {
+export const Button = ({ name, img, green }) => {
   return (
-    <CustomBtn color={color} background={background}>
+    <CustomBtn green={green}>
       <FlexRowContainer gap="0.51rem">
         {" "}
         <p>{name}</p>

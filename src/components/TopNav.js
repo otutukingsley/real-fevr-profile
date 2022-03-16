@@ -77,12 +77,7 @@ const TopNav = () => {
               <OrdinaryLink href="#!">
                 NFT P2E GAME <span className="soon">(SOON)</span>
               </OrdinaryLink>
-              <Button
-                name="Play Fantasy"
-                color="blue"
-                background="green"
-                img={Soccer}
-              />
+              <Button name="Play Fantasy" green={false} img={Soccer} />
             </FlexRowContainer>
           </TopNavLinks>
         </FlexRowContainer>
