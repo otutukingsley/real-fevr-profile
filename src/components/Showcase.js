@@ -1,5 +1,4 @@
 import React from "react"
-import { Container } from "../styles/globalStyles"
 import { ShowcaseMain } from "../styles/componentStyles/showcase"
 import TopNav from "./TopNav"
 import Navbar from "./Navbar"
@@ -11,7 +10,6 @@ const Showcase = () => {
       <TopNav />
       <Navbar />
       <Profile />
-      <Container>ACHIEVEMENT SECTION</Container>
     </ShowcaseMain>
   )
 }

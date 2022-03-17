@@ -3,8 +3,7 @@ import { DropdownAvatarContainer } from "../componentStyles/dropdown"
 
 export const ProfileSection = styled.section`
   width: 100%;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2.5rem;
+  padding: 1rem 1.5rem 0rem 1.5rem;
   display: block;
   position: relative;
   z-index: 1000;
