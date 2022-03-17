@@ -12,13 +12,13 @@ const Dropdown = () => {
     <CustomDropdown>
       <FlexRowContainer gap="0.5rem">
         <DropdownAvatarContainer className="img-container">
-          <Img src={Avatar} alt="user" />
+          <Img src={Avatar} alt="user" fit="cover" />
         </DropdownAvatarContainer>
         <div>
           <p>CryptoWi...</p>
         </div>
         <div className="icon">
-          <Img src={Arrow} alt="arrow" />
+          <Img src={Arrow} alt="arrow" fit="cover" />
         </div>
       </FlexRowContainer>
     </CustomDropdown>

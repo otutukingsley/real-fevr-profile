@@ -19,6 +19,7 @@ export const theme = {
     navColor: "#999999",
     lightGray: "#e5e5e5",
     purple: "#e76af7",
+    green: "#30e06f",
   },
 
   transitions: {

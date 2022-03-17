@@ -176,11 +176,20 @@ export const Container = styled.div`
   display: block;
   margin: 0 auto;
   max-width: 87.5rem !important;
+  position: relative;
 `
 
 export const FlexRowContainer = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: ${({ justify }) => (justify ? justify : "stretch")};
+  grid-gap: ${({ gap }) => (gap ? gap : "")};
+`
+
+export const FlexColContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: ${({ justify }) => (justify ? justify : "stretch")};
   grid-gap: ${({ gap }) => (gap ? gap : "")};
@@ -193,7 +202,7 @@ export const Img = styled.img`
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: ${({ fit }) => (fit ? fit : "contain")};
 `
 
 export const CustomLink = styled.a`

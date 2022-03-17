@@ -50,6 +50,6 @@ export const DropdownAvatarContainer = styled.div`
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.01);
   box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
-  border: 3px solid white;
+  border: 3px solid ${({ theme }) => theme.colors.white};
   overflow: hidden;
 `

@@ -3,13 +3,15 @@ import { Container } from "../styles/globalStyles"
 import { ShowcaseMain } from "../styles/componentStyles/showcase"
 import TopNav from "./TopNav"
 import Navbar from "./Navbar"
+import Profile from "./Profile"
 
 const Showcase = () => {
   return (
     <ShowcaseMain>
       <TopNav />
       <Navbar />
-      <Container>showcase</Container>
+      <Profile />
+      <Container>ACHIEVEMENT SECTION</Container>
     </ShowcaseMain>
   )
 }
