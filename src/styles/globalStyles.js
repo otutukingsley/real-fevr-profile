@@ -182,7 +182,7 @@ export const Container = styled.div`
 export const FlexRowContainer = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: ${({ align }) => (align ? align : "center")};
   justify-content: ${({ justify }) => (justify ? justify : "stretch")};
   grid-gap: ${({ gap }) => (gap ? gap : "")};
 `
@@ -199,7 +199,7 @@ export const Pg = styled.p`
   font-size: inherit;
 `
 export const Img = styled.img`
-  width: 100%;
+  width: ${({ width }) => (width ? width : "100%")};
   height: 100%;
   display: block;
   object-fit: ${({ fit }) => (fit ? fit : "contain")};

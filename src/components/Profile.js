@@ -114,11 +114,11 @@ const Profile = () => {
           <FlexRowContainer gap="0.85rem">
             <Button
               name="Settings"
-              green={true}
-              opacity={false}
+              green={"true"}
+              opacity={"false"}
               fontFamily="Azo Black"
             />
-            <Button name="View Profile" green={false} opacity={false} />
+            <Button name="View Profile" green={false} opacity={"false"} />
           </FlexRowContainer>
         </div>
       </Container>
