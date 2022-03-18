@@ -1,14 +1,15 @@
 import React from "react"
-import Achievement from "./components/Achievement"
-import Showcase from "./components/Showcase"
-import TopNav from "./components/TopNav"
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import { PopupState } from "./context/PopupState"
 
 const App = () => {
   return (
-    <div className="App">
-      <Showcase />
-      <Achievement />
-    </div>
+    <PopupState>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </PopupState>
   )
 }
 

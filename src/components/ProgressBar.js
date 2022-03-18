@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import {
   Filler,
   Progress,
@@ -6,13 +6,17 @@ import {
   ProgressBgWrapper,
   FillerText,
 } from "../styles/componentStyles/progressbar"
+import { popupContext } from "../context/PopupState"
 
 const ProgressBar = ({ done, claimed, progressText, width }) => {
-  const handlePopup = (e) => {
-    if (!done) {
-      return
+  const context = useContext(popupContext)
+  const { handlePopup } = context
+
+  const handleComplete = (done) => {
+    if (done) {
+      handlePopup()
     } else {
-      alert("claimed")
+      return
     }
   }
   return (
@@ -24,10 +28,10 @@ const ProgressBar = ({ done, claimed, progressText, width }) => {
             className={done ? "done" : claimed ? "claimed" : ""}
           ></Filler>
           <FillerText
+            onClick={() => handleComplete(done)}
             done={done}
             claimed={claimed}
             width={width}
-            onClick={(e) => handlePopup(e, done)}
             type="button"
           >
             {progressText}
