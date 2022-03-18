@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import Achievement from "../components/Achievement"
+import Footer from "../components/Footer"
 import Popup from "../components/Popup"
 import Showcase from "../components/Showcase"
 import { popupContext } from "../context/PopupState"
@@ -11,6 +12,7 @@ const Home = () => {
     <>
       <Showcase />
       <Achievement />
+      <Footer />
       {show && <Popup />}
     </>
   )

@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react"
+import React, { useContext, useRef, useEffect } from "react"
 import {
   CloseBtn,
   CloseBtnContainer,
@@ -15,7 +15,7 @@ const Popup = () => {
   const { handlePopup, show } = context
   const popupRef = useRef(null)
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (show) {
       document.body.style.overflow = "hidden"
     }

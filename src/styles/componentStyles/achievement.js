@@ -119,3 +119,35 @@ export const NftTextContainer = styled.div`
     letter-spacing: 0.2em;
   }
 `
+export const Powerup = styled.div`
+  display: block;
+  margin-top: 0.625rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`
+export const PowerupNumber = styled.h2`
+  background: linear-gradient(178.9deg, #ffffff 31.24%, #74857a 182.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 10px 20px rgba(29, 53, 117, 0.5);
+  font-weight: 900;
+  font-size: 30px;
+  font-family: Azo Black;
+`
+
+export const PowerupText = styled.p`
+  background: linear-gradient(178.9deg, #ffffff 31.24%, #74857a 182.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: Azo Black;
+`

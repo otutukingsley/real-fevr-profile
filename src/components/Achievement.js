@@ -7,6 +7,9 @@ import {
   GridItems,
   NftGrid,
   NftTextContainer,
+  Powerup,
+  PowerupNumber,
+  PowerupText,
 } from "../styles/componentStyles/achievement"
 import ProgressBar from "./ProgressBar"
 import { Container, FlexRowContainer, Img } from "../styles/globalStyles"
@@ -40,12 +43,14 @@ const Achievement = () => {
                 </NftTextContainer>
               </FlexRowContainer>
               <ProgressBar progressText="7 / 25" width="28%" />
-              <div>Price</div>
+              <Powerup>
+                <PowerupNumber>150XP</PowerupNumber>
+              </Powerup>
             </GridItems>
             <GridItems>
               <FlexRowContainer gap="1.26rem">
                 <GridItemImgContainer>
-                  <Img src={Cube} alt="NFT" width="100px" />
+                  <Img src={Cube} alt="NFT" width="60px" />
                 </GridItemImgContainer>
                 <NftTextContainer>
                   <div>
@@ -56,7 +61,9 @@ const Achievement = () => {
                 </NftTextContainer>
               </FlexRowContainer>
               <ProgressBar progressText="1122 / 2000" width="56.1%" />
-              <div>Price</div>
+              <Powerup>
+                <PowerupText>Legend Iker Casillas collectible</PowerupText>
+              </Powerup>
             </GridItems>
             <GridItems>
               <FlexRowContainer gap="1.26rem">
@@ -72,7 +79,9 @@ const Achievement = () => {
                 </NftTextContainer>
               </FlexRowContainer>
               <ProgressBar progressText="click to claim reward" done={true} />
-              <div>Price</div>
+              <Powerup>
+                <PowerupNumber>150XP</PowerupNumber>
+              </Powerup>
             </GridItems>
             <GridItems>
               <FlexRowContainer gap="1.26rem">
@@ -90,7 +99,9 @@ const Achievement = () => {
                 </NftTextContainer>
               </FlexRowContainer>
               <ProgressBar progressText="complete & claimed" claimed={true} />
-              <div>Price</div>
+              <Powerup>
+                <PowerupNumber>150XP</PowerupNumber>
+              </Powerup>
             </GridItems>
           </NftGrid>
         </Container>
