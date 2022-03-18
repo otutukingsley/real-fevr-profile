@@ -34,7 +34,7 @@ const Popup = () => {
     <PopupBg onClick={handleDismiss} ref={popupRef}>
       <PopupWrapper>
         <CloseBtnContainer>
-          <CloseBtn>
+          <CloseBtn onClick={() => handlePopup()}>
             <Img src={Close} alt="close" />
           </CloseBtn>
         </CloseBtnContainer>
