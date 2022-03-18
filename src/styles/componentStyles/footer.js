@@ -89,6 +89,7 @@ export const MiniFooter = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 `
 export const FooterLogoContainer = styled.div`
   width: 150px;
@@ -105,7 +106,7 @@ export const PrivacyList = styled.ul`
   flex-direction: row;
   justify-content: stretch;
   align-items: center;
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
   margin-bottom: 0.563rem;
 `
 export const PrivacyListItem = styled.li`

@@ -135,7 +135,7 @@ const Footer = () => {
             <FooterPrivacy>
               <PrivacyList>
                 <PrivacyListItem>privacy notice</PrivacyListItem>
-                <PrivacyListItem>terms and conditions</PrivacyListItem>
+                <PrivacyListItem>terms & conditions</PrivacyListItem>
                 <PrivacyListItem>contacts</PrivacyListItem>
               </PrivacyList>
               <ul>
