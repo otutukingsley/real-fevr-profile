@@ -47,6 +47,6 @@ Feature implemented are based on the assignment description
 ## Conclusion
 
 My development experience for this application was an interesting yet challenging one. I enjoyed the whole building process from scratch. Overall it was a fun and interesting project to work on. 
-I have hosted the project on vercel for an netlify to test the project and below is a live link to the hosted project.
+I have hosted the project on netlify to test the project and below is a live link to the hosted project.
 
 Live link to [realfevr-frontend-task-by-otutu](https://wonderful-bose-d7981c.netlify.app/)
