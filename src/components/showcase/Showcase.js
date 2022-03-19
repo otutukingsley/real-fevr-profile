@@ -1,7 +1,7 @@
 import React from "react"
 import { ShowcaseMain } from "../../styles/componentStyles/showcase"
-import TopNav from "../TopNav"
-import Navbar from "../Navbar"
+import TopNav from "../navigation/TopNav"
+import Navbar from "../navigation/Navbar"
 import Profile from "./Profile"
 import { useViewPort } from "../../hooks/viewport"
 

@@ -6,16 +6,16 @@ import {
   BrandContainer,
   BrandImg,
   Pg,
-} from "../styles/componentStyles/navigation"
+} from "../../styles/componentStyles/navigation"
 import {
   Container,
   FlexRowContainer,
   OrdinaryLink,
-} from "../styles/globalStyles"
-import PurpleLogo from "../assets/images/realfevr/fevr-purple-logo.png"
-import Soccer from "../assets/images/extras/football.svg"
-import SocialLinks from "./SocialLinks"
-import { CustomBtnLink } from "../styles/componentStyles/button"
+} from "../../styles/globalStyles"
+import PurpleLogo from "../../assets/images/realfevr/fevr-purple-logo.png"
+import Soccer from "../../assets/images/extras/football.svg"
+import SocialLinks from "../SocialLinks"
+import { CustomBtnLink } from "../../styles/componentStyles/button"
 
 const TopNav = () => {
   return (

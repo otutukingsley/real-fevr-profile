@@ -6,14 +6,14 @@ import {
   NavBrand,
   NavLogoContainer,
   TopNavLinks,
-} from "../styles/componentStyles/navigation"
+} from "../../styles/componentStyles/navigation"
 import {
   Container,
   FlexRowContainer,
   OrdinaryLink,
-} from "../styles/globalStyles"
-import GreenLogo from "../assets/images/realfevr/fevr-sm-logo.svg"
-import Dropdown from "./showcase/Dropdown"
+} from "../../styles/globalStyles"
+import GreenLogo from "../../assets/images/realfevr/fevr-sm-logo.svg"
+import Dropdown from "../showcase/Dropdown"
 
 const Navbar = () => {
   return (

@@ -1,13 +1,5 @@
-import styled, { keyframes, css } from "styled-components"
-
-export const moveHorizontally = (width) => keyframes`
-  0% {
-    width: 0;
-  }
-  100% {
-    width: ${width};
-  }
-`
+import styled, { css } from "styled-components"
+import { moveHorizontally } from "../keyframes/keyframes"
 
 export const ProgressBarContainer = styled.div`
   width: 100%;
@@ -67,8 +59,8 @@ export const Progress = styled.div`
 export const Filler = styled.div`
   left: 0;
   position: absolute;
-  animation: ${({ width }) => moveHorizontally(width)} 5s normal forwards;
-  -webkit-animation: ${({ width }) => moveHorizontally(width)} 5s normal
+  animation: ${({ width }) => moveHorizontally(width)} 10s normal forwards;
+  -webkit-animation: ${({ width }) => moveHorizontally(width)} 10s normal
     forwards;
   box-shadow: 0px 0px 18.9113px #30e06f, 0px 0px 73.2115px #30e06f,
     inset 0px 0px 7.32115px rgba(49, 255, 156, 0.5);
