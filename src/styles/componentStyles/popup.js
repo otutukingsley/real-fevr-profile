@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { bounceIn } from "../keyframes/keyframes"
+import { bounceIn, slideInTop, slideOutTop } from "../keyframes/keyframes"
 
 export const PopupBg = styled.div`
   width: 100%;
@@ -21,6 +21,14 @@ export const PopupBg = styled.div`
   top: 0;
   left: 0;
 `
+
+export const MobileNavBg = styled(PopupBg)`
+  padding: 0;
+  top: 6.5%;
+  justify-content: center;
+  align-items: flex-start;
+`
+
 export const PopupWrapper = styled.div`
   width: 45rem;
   height: auto;
@@ -38,6 +46,16 @@ export const PopupWrapper = styled.div`
   animation: ${bounceIn} 1s ease 0s 1 normal forwards;
 `
 
+export const MobileNavWrapper = styled(PopupWrapper)`
+  width: 100%;
+  height: 70%;
+  background: ${({ theme }) => theme.colors.black};
+  animation: ${slideInTop} 0.5s ease 0s 1 normal forwards;
+  border-top: 1px solid ${({ theme }) => theme.colors.white};
+  justify-content: flex-start;
+  align-items: flex-start;
+`
+
 export const CloseBtn = styled.button`
   background: transparent;
   padding: 0;
@@ -49,7 +67,7 @@ export const CloseBtn = styled.button`
   margin-left: auto;
 
   &:hover {
-    transform: rotate(180deg);
+    transform: ${({ rotate }) => (rotate ? "rotate(180deg)" : "")};
   }
 `
 export const CloseBtnContainer = styled.div`
@@ -63,7 +81,6 @@ export const Congratulations = styled.h2`
   width: 100%;
   display: block;
   margin: 3rem 0;
-  // font-size: 20px;
   background: linear-gradient(141.32deg, #30e06f 4.58%, #118139 122.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

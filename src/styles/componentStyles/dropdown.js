@@ -14,7 +14,7 @@ export const CustomDropdown = styled.div`
   transition: ${({ theme }) => theme.transitions.all};
   box-sizing: border-box;
   position: relative;
-  z-index: 101;
+  z-index: 10;
 
   &:before {
     content: "";

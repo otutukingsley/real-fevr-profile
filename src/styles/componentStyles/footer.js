@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const FooterSection = styled.footer`
   width: 100%;
-  // border: 2px solid red;
   position: relative;
   &:after {
     content: "";
@@ -25,9 +24,8 @@ export const FooterSection = styled.footer`
 `
 export const FooterWrapper = styled.div`
   position: relative;
-  // border: 2px solid green;
   display: block;
-  z-index: 100;
+  z-index: 1;
   width: 100%;
   padding: 5.625rem 1.5rem 3.125rem 1.5rem;
 `

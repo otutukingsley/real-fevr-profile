@@ -10,13 +10,22 @@ export const TopNavigation = styled.nav`
   color: ${({ theme }) => theme.colors.white};
   display: block;
   position: relative;
-  z-index: 100;
+  z-index: 10;
 `
 
 export const MainNavigation = styled(TopNavigation)`
   background: transparent;
   border: unset;
   padding: 0rem 1.5rem;
+
+  @media (max-width: ${({ breakpoint }) => breakpoint}px) {
+    background-color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.white};
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+  }
 `
 
 export const BrandContainer = styled.div`
@@ -32,6 +41,12 @@ export const NavLogoContainer = styled.div`
   min-width: 12.5rem;
   height: 3.5rem;
   display: block;
+
+  @media (max-width: 1065px) {
+    width: 10rem;
+    max-width: unset;
+    min-width: unset;
+  }
 `
 
 export const Beta = styled.div`
@@ -44,6 +59,11 @@ export const Beta = styled.div`
   box-shadow: 0px 10px 20px rgba(29, 53, 117, 0.3);
   text-align: center;
   font-family: Azo Black;
+
+  @media (max-width: 1065px) {
+    padding: 0.2rem 0.2rem 0rem 0.2rem;
+    font-size: 0.675rem;
+  }
 `
 
 export const Pg = styled.p`

@@ -10,15 +10,9 @@ const Showcase = () => {
   const breakPoint = 1065
 
   return (
-    <ShowcaseMain>
-      {width > breakPoint ? (
-        <>
-          <TopNav />
-          <Navbar />
-        </>
-      ) : (
-        ""
-      )}
+    <ShowcaseMain breakPoint={breakPoint}>
+      {width > breakPoint ? <TopNav /> : ""}
+      <Navbar />
       <Profile />
     </ShowcaseMain>
   )

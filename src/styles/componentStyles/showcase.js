@@ -9,7 +9,11 @@ export const ShowcaseMain = styled.div`
   background-position: center top;
   position: relative;
   padding: 0;
-  z-index: 100;
+  z-index: 10;
+
+  @media (max-width: ${({ breakPoint }) => breakPoint}px) {
+    padding-top: 6rem;
+  }
   &:before {
     content: "";
     position: absolute;

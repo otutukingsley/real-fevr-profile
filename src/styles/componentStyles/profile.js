@@ -6,7 +6,7 @@ export const ProfileSection = styled.section`
   padding: 1rem 1.5rem 0rem 1.5rem;
   display: block;
   position: relative;
-  z-index: 1000;
+  z-index: 10;
   position: relative;
 
   .profile-abs {
@@ -40,7 +40,7 @@ export const ProfileTag = styled.p`
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) !important;
-  z-index: 100;
+  z-index: 10;
   background: linear-gradient(178.9deg, #ffffff 31.24%, #74857a 182.59%);
   box-shadow: 0px 10px 20px rgba(29, 53, 117, 0.3);
   border-radius: 30px;
