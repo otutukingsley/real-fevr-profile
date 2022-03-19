@@ -29,7 +29,7 @@ const Navbar = () => {
             </FlexRowContainer>
           </NavBrand>
           <TopNavLinks>
-            <FlexRowContainer gap="2rem">
+            <FlexRowContainer gap="1.75rem">
               <OrdinaryLink href="#!">Packs</OrdinaryLink>
               <OrdinaryLink href="#!">Marketplace</OrdinaryLink>
               <OrdinaryLink href="#!">Challenges</OrdinaryLink>

@@ -13,6 +13,10 @@ export const ProfileSection = styled.section`
     position: absolute;
     right: 0;
     top: 0;
+
+    @media (max-width: 1065px) {
+      display: none;
+    }
   }
 `
 
@@ -61,7 +65,7 @@ export const UserName = styled.h2`
   text-shadow: 0px 10px 20px rgba(29, 53, 117, 0.5);
   font-weight: bold;
   margin-bottom: 0.35rem;
-  font-size: 2.188rem;
+  font-size: clamp(1.5rem, 3.5vw, 2.188rem);
   background: linear-gradient(178.9deg, #ffffff 31.24%, #74857a 182.59%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -103,14 +107,19 @@ export const OwnStake = styled.div`
   grid-gap: 1rem;
   margin: 0.938rem 0;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    grid-gap: 0.5rem;
+  }
 `
 export const WalletId = styled.p`
   margin: 0;
   padding: 0;
   font-weight: bold;
   letter-spacing: 0.2em;
-  font-size: 13px;
+  font-size: clamp(0.6rem, 2.5vw, 0.813rem);
 `
 
 export const StakedContainer = styled.div`
@@ -162,17 +171,26 @@ export const RankNumbersList = styled.ul`
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  grid-gap: 30px;
+  grid-gap: 1.875rem;
+  // border: 2px solid red;
+
+  @media (max-width: 415px) {
+    grid-gap: 1rem;
+  }
 `
 export const RankNumbersListItem = styled.li`
   text-align: center;
   display: block;
   position: relative;
   width: auto;
-  padding-right: 30px;
+  padding-right: 1.875rem;
+
+  @media (max-width: 415px) {
+    padding-right: 1rem;
+  }
 
   h3 {
-    font-size: 20px;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
     background: linear-gradient(141.32deg, #30e06f 4.58%, #118139 122.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -181,15 +199,15 @@ export const RankNumbersListItem = styled.li`
     text-shadow: 0px 10px 20px rgba(29, 53, 117, 0.5);
     font-weight: bold;
     text-transform: capitalize;
-    margin-bottom: 5px;
+    margin-bottom: 0.313rem;
 
     span {
-      font-size: 14px;
+      font-size: clamp(0.7rem, 2vw, 0.875rem);
     }
   }
 
   p {
-    font-size: 11px;
+    font-size: clamp(0.5rem, 2vw, 0.688rem);
     text-transform: uppercase;
     line-height: 1.1;
     font-weight: 700;

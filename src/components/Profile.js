@@ -50,7 +50,7 @@ const Profile = () => {
             <UserName>@CryptoWizard</UserName>
             <LinkId href="#!">
               <WalletId>0x88...87E005DAd5</WalletId>
-              <MoreArrow className="img-container">
+              <MoreArrow>
                 <Img src={ArrowMore} alt="more" />
               </MoreArrow>
             </LinkId>

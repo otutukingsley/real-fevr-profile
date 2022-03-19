@@ -80,7 +80,8 @@ export const BinanceImgContainer = styled.div`
   margin-bottom: 1.25rem;
 `
 export const BinanceQuote = styled.p`
-  font-size: 18px;
+  font-size: clamp(0.8rem, 2.5vw, 1.125rem);
+  opacity: 0.8;
 `
 export const MiniFooter = styled.div`
   padding-top: 6.25rem;
@@ -90,16 +91,26 @@ export const MiniFooter = styled.div`
   align-items: center;
   justify-content: space-between;
   text-align: center;
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+    grid-gap: 2rem;
+  }
 `
 export const FooterLogoContainer = styled.div`
-  width: 150px;
-  height: 20px;
+  width: 200px;
+  height: 100%;
+  display: flex;
 `
 export const FooterPrivacy = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-items: space-between;
+
+  @media (max-width: 990px) {
+    align-items: center;
+  }
 `
 export const PrivacyList = styled.ul`
   display: flex;
@@ -108,12 +119,15 @@ export const PrivacyList = styled.ul`
   align-items: center;
   grid-gap: 1rem;
   margin-bottom: 0.563rem;
+  @media (max-width: 990px) {
+    flex-wrap: wrap;
+  }
 `
 export const PrivacyListItem = styled.li`
   font-weight: 400;
   font-size: 10px;
   text-align: right;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 `
 export const ReservedListItem = styled(PrivacyListItem)`

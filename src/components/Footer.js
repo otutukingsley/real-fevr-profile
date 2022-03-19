@@ -14,6 +14,7 @@ import {
   PrivacyList,
   PrivacyListItem,
   ReservedListItem,
+  BinanceQuote,
 } from "../styles/componentStyles/footer"
 import { Container, Img } from "../styles/globalStyles"
 import Binance from "../assets/images/extras/binance-logo.svg"
@@ -125,7 +126,9 @@ const Footer = () => {
             <BinanceImgContainer>
               <Img src={Binance} alt="binace" />
             </BinanceImgContainer>
-            <p>RealFevr is powered by Binance Smart Chain</p>
+            <BinanceQuote>
+              RealFevr is powered by Binance Smart Chain
+            </BinanceQuote>
           </BinanceSection>
           <MiniFooter>
             <SocialLinks />

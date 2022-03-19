@@ -49,7 +49,7 @@ export const Beta = styled.div`
 export const Pg = styled.p`
   font-size: clamp(0.7rem, 2.5vw, 0.875rem);
   font-family: Azo Black;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 `
 

@@ -9,19 +9,19 @@ const AchievementNav = () => {
   return (
     <AchievementTop>
       <AchievementItems>
-        <AchievementTabs>collection</AchievementTabs>
+        <AchievementTabs className="inactive">collection</AchievementTabs>
       </AchievementItems>
       <AchievementItems>
-        <AchievementTabs>transactions</AchievementTabs>
+        <AchievementTabs className="inactive">transactions</AchievementTabs>
       </AchievementItems>
       <AchievementItems>
         <AchievementTabs className="active">achievements</AchievementTabs>
       </AchievementItems>
       <AchievementItems>
-        <AchievementTabs>rewards</AchievementTabs>
+        <AchievementTabs className="inactive">rewards</AchievementTabs>
       </AchievementItems>
       <AchievementItems>
-        <AchievementTabs>notifications</AchievementTabs>
+        <AchievementTabs className="inactive">notifications</AchievementTabs>
       </AchievementItems>
     </AchievementTop>
   )

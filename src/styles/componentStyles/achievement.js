@@ -21,8 +21,9 @@ export const AchievementTopContainer = styled.div`
   display: block;
   background: rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 0.938rem 1.5rem 0 1.5rem;
+  padding: 0.938rem 1.5rem 0rem 1.5rem;
   margin: 0;
+  overflow-x: scroll;
 `
 export const AchievementTop = styled.ul`
   display: flex;
@@ -30,6 +31,10 @@ export const AchievementTop = styled.ul`
   align-items: center;
   justify-content: center;
   grid-gap: 2.5rem;
+
+  @media (max-width: 990px) {
+    grid-gap: 1.5rem;
+  }
 `
 
 export const AchievementTabs = styled.button`
@@ -40,12 +45,16 @@ export const AchievementTabs = styled.button`
   color: ${({ theme }) => theme.colors.white};
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 17px;
+  font-size: clamp(0.85rem, 2vw, 1.063rem);
   letter-spacing: 0.2em;
   cursor: pointer;
   line-height: 100%;
   opacity: 0.7;
   padding-bottom: 0.938rem;
+
+  @media (max-width: 990px) {
+    font-size: clamp(0.85rem, 1vw, 1.063rem);
+  }
 `
 export const AchievementItems = styled.li`
   width: auto;
@@ -72,6 +81,12 @@ export const AchievementItems = styled.li`
       box-shadow: 3px 7px 15px rgba(13, 21, 62, 0.4);
     }
   }
+
+  @media (max-width: 990px) {
+    .inactive {
+      display: none;
+    }
+  }
 `
 
 export const NftGrid = styled.div`
@@ -79,6 +94,11 @@ export const NftGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 10rem;
   width: 100%;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    grid-gap: 8rem;
+  }
 `
 export const GridItems = styled.div`
   display: flex;
@@ -93,6 +113,10 @@ export const GridItems = styled.div`
 export const GridItemImgContainer = styled.div`
   display: block;
   margin: 0;
+
+  @media (max-width: 360px) {
+    display: none;
+  }
 `
 export const NftTextContainer = styled.div`
   display: flex;
@@ -107,7 +131,7 @@ export const NftTextContainer = styled.div`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-shadow: 0px 10px 20px rgba(29, 53, 117, 0.5);
-    font-size: 30px;
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
     font-family: Azo Black;
     margin-bottom: 0.563rem;
     margin-right: 0.6rem;
@@ -115,8 +139,12 @@ export const NftTextContainer = styled.div`
 
   span {
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: clamp(0.588rem, 2.5vw, 0.688rem);
     letter-spacing: 0.2em;
+  }
+
+  p {
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
   }
 `
 export const Powerup = styled.div`
