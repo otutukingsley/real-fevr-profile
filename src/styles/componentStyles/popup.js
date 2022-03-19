@@ -24,16 +24,17 @@ export const PopupBg = styled.div`
 
 export const MobileNavBg = styled(PopupBg)`
   padding: 0;
-  top: 6.5%;
+  top: 6.64%;
   justify-content: center;
   align-items: flex-start;
+  border-top: 1px solid ${({ theme }) => theme.colors.white};
 `
 
 export const PopupWrapper = styled.div`
   width: 45rem;
   height: auto;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  background: #000;
+  background: ${({ theme }) => theme.colors.black};
   color: ${({ theme }) => theme.colors.white};
   position: relative;
   z-index: 1000;
@@ -48,13 +49,13 @@ export const PopupWrapper = styled.div`
 
 export const MobileNavWrapper = styled(PopupWrapper)`
   width: 100%;
-  height: auto;
   background: ${({ theme }) => theme.colors.black};
   animation: ${slideInTop} 0.5s ease 0s 1 normal forwards;
-  border-top: 1px solid ${({ theme }) => theme.colors.white};
+
   justify-content: flex-start;
   align-items: flex-start;
   padding: 2rem 1rem;
+  z-index: 100;
 `
 
 export const MobileListItem = styled.li`
