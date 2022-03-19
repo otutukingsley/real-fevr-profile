@@ -48,12 +48,22 @@ export const PopupWrapper = styled.div`
 
 export const MobileNavWrapper = styled(PopupWrapper)`
   width: 100%;
-  height: 70%;
+  height: auto;
   background: ${({ theme }) => theme.colors.black};
   animation: ${slideInTop} 0.5s ease 0s 1 normal forwards;
   border-top: 1px solid ${({ theme }) => theme.colors.white};
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 2rem 1rem;
+`
+
+export const MobileListItem = styled.li`
+  text-align: left;
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `
 
 export const CloseBtn = styled.button`
