@@ -24,10 +24,9 @@ export const PopupBg = styled.div`
 
 export const MobileNavBg = styled(PopupBg)`
   padding: 0;
-  top: 6.64%;
+  top: 6.6%;
   justify-content: center;
   align-items: flex-start;
-  border-top: 1px solid ${({ theme }) => theme.colors.white};
 `
 
 export const PopupWrapper = styled.div`
