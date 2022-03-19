@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+## RealFevr Assessment for Frontend Position
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a single page web application showing a user profile at RealFevr
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+ * [Description](#description)
+ * [Technologies](#technologies)
+ * [Features](#features)
+ * [Getting Started](#getting-started)
+    * [Installation](#installation)
+    * [Conclusion](#conclusion)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In this test we provide you with the design of our user profile with more features that we currently have. You must reproduce the design in a web page as accurately as you can. We also provide you with 3 stages of our achievements bar, so you can do an interactive animation to fill the bar, click to claim, generate a pop up saying congratulations and the final state of the bar completed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [React](https://reactjs.org/) - Web Application Framework
+* [Styled Components](https://styled-components.com) - Styling Library
+* [JavaScript](https://www.javascript.com) - Programming language
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feature implemented are based on the assignment description
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Completed features
+* A near perfect visual representation of the design in a web page
+* Interactive animation to fill the bar (This happens when a user loads the page)
+* Congratulations popup and final state of the bar completed
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* git clone
+  [real-fevr-profile](https://github.com/otutukingsley/real-fevr-profile.git)
+* Run npm install` to install packages
+* Run npm run build to build the project
+* Run npm start to start the server
+* Navigate to [localhost:3000](http://localhost:3000/) in browser to access the
+  application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Conclusion
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+My development experience for this application was an interesting yet challenging one. I enjoyed the whole building process from scratch. Overall it was a fun and interesting project to work on. 
+I have hosted the project on vercel for an netlify to test the project and below is a live link to the hosted project.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Live link to [realfevr-frontend-task-by-otutu](https://wonderful-bose-d7981c.netlify.app/)
