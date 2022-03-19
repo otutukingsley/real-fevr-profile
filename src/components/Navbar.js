@@ -5,10 +5,13 @@ import {
   MainNavigation,
   NavBrand,
   NavLogoContainer,
-  OrdinaryLink,
   TopNavLinks,
 } from "../styles/componentStyles/navigation"
-import { Container, FlexRowContainer } from "../styles/globalStyles"
+import {
+  Container,
+  FlexRowContainer,
+  OrdinaryLink,
+} from "../styles/globalStyles"
 import GreenLogo from "../assets/images/realfevr/fevr-sm-logo.svg"
 import Dropdown from "./Dropdown"
 

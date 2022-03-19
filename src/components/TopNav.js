@@ -6,13 +6,16 @@ import {
   BrandContainer,
   BrandImg,
   Pg,
-  OrdinaryLink,
 } from "../styles/componentStyles/navigation"
-import { Container, FlexRowContainer, Img } from "../styles/globalStyles"
+import {
+  Container,
+  FlexRowContainer,
+  OrdinaryLink,
+} from "../styles/globalStyles"
 import PurpleLogo from "../assets/images/realfevr/fevr-purple-logo.png"
 import Soccer from "../assets/images/extras/football.svg"
-import { Button } from "./Buttons"
 import SocialLinks from "./SocialLinks"
+import { CustomBtnLink } from "../styles/componentStyles/button"
 
 const TopNav = () => {
   return (
@@ -37,10 +40,16 @@ const TopNav = () => {
               <OrdinaryLink href="#!" bold>
                 STAKING
               </OrdinaryLink>
-              <OrdinaryLink href="#!" bold>
+              <OrdinaryLink href="#!" bold disabled>
                 NFT P2E GAME <span className="soon">(SOON)</span>
               </OrdinaryLink>
-              <Button name="Play Fantasy" green={false} img={Soccer} />
+
+              <CustomBtnLink className="btn-light btn-sm">
+                <span>Play Fantasy</span>
+                <span>
+                  <img src={Soccer} alt="button" />
+                </span>
+              </CustomBtnLink>
             </FlexRowContainer>
           </TopNavLinks>
         </FlexRowContainer>

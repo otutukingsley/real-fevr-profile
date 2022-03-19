@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Pg as Paragraph, CustomLink } from "../globalStyles"
+import { CustomLink } from "../globalStyles"
 
 export const TopNavigation = styled.nav`
   background: ${({ theme }) => theme.colors.lightBg};
@@ -10,7 +10,7 @@ export const TopNavigation = styled.nav`
   color: ${({ theme }) => theme.colors.white};
   display: block;
   position: relative;
-  z-index: 1000;
+  z-index: 100;
 `
 
 export const MainNavigation = styled(TopNavigation)`
@@ -47,7 +47,10 @@ export const Beta = styled.div`
 `
 
 export const Pg = styled.p`
-  font-size: 0.875rem;
+  font-size: clamp(0.7rem, 2.5vw, 0.875rem);
+  font-family: Azo Black;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 `
 
 export const TopNavBrand = styled(CustomLink)`
@@ -105,9 +108,11 @@ export const TopNavSocialsItemLink = styled(CustomLink)`
   }
 `
 export const OrdinaryLink = styled(CustomLink)`
-  font-weight: ${({ bold }) => (bold ? "bold" : "normal")};
+  font-weight: ${({ bold }) => (bold ? "900" : "normal")};
   color: ${({ theme }) => theme.colors.white};
   text-transform: uppercase;
+  font-family: ${({ bold }) => (bold ? "Azo Black" : "Azo Md")};
+  font-size: clamp(0.7rem, 2.5vw, 0.875rem);
   .soon {
     font-weight: 300;
     font-family: Azo Sans;

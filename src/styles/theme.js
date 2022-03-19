@@ -4,7 +4,7 @@ export const theme = {
     white: "#FFFFFF",
     lightBorder: "rgba(255,255,255,.2)",
     lightBg: "rgba(255,255,255,.1)",
-    darkFont: "#555555",
+    btnlight: "#2e457e",
     bgColor: "hsl(0, 0%, 98%)",
     bgColor2: "#FAFAFA",
     darkGreen: "#009a375c",

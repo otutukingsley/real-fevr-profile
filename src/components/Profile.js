@@ -32,7 +32,8 @@ import PurpleLogo from "../assets/images/realfevr/fevr-purple-logo.png"
 import Cup from "../assets/images/extras/cup.png"
 import One from "../assets/images/extras/one.png"
 import Star from "../assets/images/extras/star.png"
-import { Button } from "./Buttons"
+
+import { CustomBtnLink } from "../styles/componentStyles/button"
 
 const Profile = () => {
   return (
@@ -112,13 +113,10 @@ const Profile = () => {
         </FlexColContainer>
         <div className="profile-abs">
           <FlexRowContainer gap="0.85rem">
-            <Button
-              name="Settings"
-              green={"true"}
-              opacity={"false"}
-              fontFamily="Azo Black"
-            />
-            <Button name="View Profile" green={false} opacity={"false"} />
+            <CustomBtnLink className="btn-green btn-xs">Settings</CustomBtnLink>
+            <CustomBtnLink className="btn-white btn-xs">
+              view profile
+            </CustomBtnLink>
           </FlexRowContainer>
         </div>
       </Container>

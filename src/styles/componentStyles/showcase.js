@@ -9,7 +9,7 @@ export const ShowcaseMain = styled.div`
   background-position: center top;
   position: relative;
   padding: 0;
-  z-index: 1;
+  z-index: 100;
   &:before {
     content: "";
     position: absolute;
