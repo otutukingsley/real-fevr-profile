@@ -16,6 +16,7 @@ const MobileNav = () => {
   const menuRef = useRef(null)
 
   useEffect(() => {
+    /* Disables or Enables window scrolling dependent on the menu state in the useEffect dependency array */
     if (menu) {
       document.body.style.overflow = "hidden"
     }
@@ -24,6 +25,7 @@ const MobileNav = () => {
     }
   }, [menu])
 
+  /* Handles the hiding or closing the mobile menu */
   const handleDismiss = (e) => {
     if (menuRef.current === e.target) {
       handleMenu()

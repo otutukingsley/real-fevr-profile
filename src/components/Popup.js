@@ -16,6 +16,7 @@ const Popup = () => {
   const popupRef = useRef(null)
 
   useEffect(() => {
+    /* Disables or Enables window scrolling dependent on the popup SHOW state in the useEffect dependency array */
     if (show) {
       document.body.style.overflow = "hidden"
     }
@@ -24,6 +25,7 @@ const Popup = () => {
     }
   }, [show])
 
+  /* Handles the hiding or closing the Popup */
   const handleDismiss = (e) => {
     if (popupRef.current === e.target) {
       handlePopup()

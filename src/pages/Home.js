@@ -12,6 +12,7 @@ const Home = () => {
   const { show, menu } = context
   const { width } = useViewPort()
   const breakPoint = 1065
+
   return (
     <>
       <Showcase />

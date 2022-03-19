@@ -11,3 +11,5 @@ export function useViewPort() {
   }, [])
   return { width }
 }
+
+/* The width variable holds the current width (in pixels) of the window*/

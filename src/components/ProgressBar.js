@@ -13,6 +13,7 @@ const ProgressBar = ({ done, claimed, progressText, width }) => {
   const context = useContext(popupContext)
   const { handlePopup } = context
 
+  /* Handles the showing the popup when claimed button is clicked */
   const handleComplete = (done) => {
     if (done) {
       handlePopup()
