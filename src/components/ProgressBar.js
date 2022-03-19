@@ -7,6 +7,7 @@ import {
   FillerText,
 } from "../styles/componentStyles/progressbar"
 import { popupContext } from "../context/PopupState"
+import PropTypes from "prop-types"
 
 const ProgressBar = ({ done, claimed, progressText, width }) => {
   const context = useContext(popupContext)
@@ -40,6 +41,13 @@ const ProgressBar = ({ done, claimed, progressText, width }) => {
       </ProgressBgWrapper>
     </ProgressBarContainer>
   )
+}
+
+ProgressBar.propTypes = {
+  progressText: PropTypes.string,
+  width: PropTypes.string,
+  done: PropTypes.bool,
+  claimed: PropTypes.bool,
 }
 
 export default ProgressBar

@@ -5,7 +5,6 @@ import {
   MobileNavWrapper,
 } from "../../styles/componentStyles/popup"
 import { popupContext } from "../../context/PopupState"
-import { useViewPort } from "../../hooks/viewport"
 import SocialLinks from "../SocialLinks"
 import { OrdinaryLink } from "../../styles/globalStyles"
 import { CustomBtnLink } from "../../styles/componentStyles/button"
@@ -15,8 +14,6 @@ const MobileNav = () => {
   const context = useContext(popupContext)
   const { handleMenu, menu } = context
   const menuRef = useRef(null)
-  const { width } = useViewPort()
-  const breakPoint = 1065
 
   useEffect(() => {
     if (menu) {

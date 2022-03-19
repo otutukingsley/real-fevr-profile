@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { bounceIn, slideInTop, slideOutTop } from "../keyframes/keyframes"
+import { bounceIn, slideInTop } from "../keyframes/keyframes"
 
 export const PopupBg = styled.div`
   width: 100%;
