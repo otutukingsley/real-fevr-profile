@@ -1,9 +1,9 @@
 import React from "react"
-import { ShowcaseMain } from "../styles/componentStyles/showcase"
-import TopNav from "./TopNav"
-import Navbar from "./Navbar"
+import { ShowcaseMain } from "../../styles/componentStyles/showcase"
+import TopNav from "../TopNav"
+import Navbar from "../Navbar"
 import Profile from "./Profile"
-import { useViewPort } from "../hooks/viewport"
+import { useViewPort } from "../../hooks/viewport"
 
 const Showcase = () => {
   const { width } = useViewPort()

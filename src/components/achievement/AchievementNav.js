@@ -3,7 +3,7 @@ import {
   AchievementItems,
   AchievementTabs,
   AchievementTop,
-} from "../styles/componentStyles/achievement"
+} from "../../styles/componentStyles/achievement"
 
 const AchievementNav = () => {
   return (

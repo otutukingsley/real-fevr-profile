@@ -13,7 +13,7 @@ import {
   OrdinaryLink,
 } from "../styles/globalStyles"
 import GreenLogo from "../assets/images/realfevr/fevr-sm-logo.svg"
-import Dropdown from "./Dropdown"
+import Dropdown from "./showcase/Dropdown"
 
 const Navbar = () => {
   return (

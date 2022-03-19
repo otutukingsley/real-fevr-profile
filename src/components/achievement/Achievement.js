@@ -10,13 +10,13 @@ import {
   Powerup,
   PowerupNumber,
   PowerupText,
-} from "../styles/componentStyles/achievement"
-import ProgressBar from "./ProgressBar"
-import { Container, FlexRowContainer, Img } from "../styles/globalStyles"
+} from "../../styles/componentStyles/achievement"
+import ProgressBar from "../ProgressBar"
+import { Container, FlexRowContainer, Img } from "../../styles/globalStyles"
 import AchievementNav from "./AchievementNav"
-import DiamondHalf from "../assets/images/extras/diamond-half.svg"
-import DiamondFull from "../assets/images/extras/diamond-full.svg"
-import Cube from "../assets/images/extras/collectible.png"
+import DiamondHalf from "../../assets/images/extras/diamond-half.svg"
+import DiamondFull from "../../assets/images/extras/diamond-full.svg"
+import Cube from "../../assets/images/extras/collectible.png"
 
 const Achievement = () => {
   return (

@@ -1,11 +1,11 @@
 import React from "react"
-import Avatar from "../assets/images/extras/avatar.png"
-import Arrow from "../assets/images/extras/arrow.svg"
+import Avatar from "../../assets/images/extras/avatar.png"
+import Arrow from "../../assets/images/extras/arrow.svg"
 import {
   CustomDropdown,
   DropdownAvatarContainer,
-} from "../styles/componentStyles/dropdown"
-import { FlexRowContainer, Img } from "../styles/globalStyles"
+} from "../../styles/componentStyles/dropdown"
+import { FlexRowContainer, Img } from "../../styles/globalStyles"
 
 const Dropdown = () => {
   return (

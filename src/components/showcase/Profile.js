@@ -19,21 +19,21 @@ import {
   RankListItem,
   RankNumbersList,
   RankNumbersListItem,
-} from "../styles/componentStyles/profile"
+} from "../../styles/componentStyles/profile"
 import {
   Container,
   FlexColContainer,
   FlexRowContainer,
   Img,
-} from "../styles/globalStyles"
-import Avatar from "../assets/images/extras/avatar.png"
-import ArrowMore from "../assets/images/extras/expand.svg"
-import PurpleLogo from "../assets/images/realfevr/fevr-purple-logo.png"
-import Cup from "../assets/images/extras/cup.png"
-import One from "../assets/images/extras/one.png"
-import Star from "../assets/images/extras/star.png"
+} from "../../styles/globalStyles"
+import Avatar from "../../assets/images/extras/avatar.png"
+import ArrowMore from "../../assets/images/extras/expand.svg"
+import PurpleLogo from "../../assets/images/realfevr/fevr-purple-logo.png"
+import Cup from "../../assets/images/extras/cup.png"
+import One from "../../assets/images/extras/one.png"
+import Star from "../../assets/images/extras/star.png"
 
-import { CustomBtnLink } from "../styles/componentStyles/button"
+import { CustomBtnLink } from "../../styles/componentStyles/button"
 
 const Profile = () => {
   return (
